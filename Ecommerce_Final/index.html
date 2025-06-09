@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce de Lentes Ray-Ban</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/Logo_F.png" alt="Luxury Glasses">
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acerca.html">Acerca de Nosotros</a></li>
+            <li><a href="admin.html">Admin Productos</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="cart-icon">🛒</a>
+            <a href="#" class="profile-icon">👤</a>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="assets/images/banner.jpg" alt="Banner de Lentes Ray-Ban">
+    </section>
+    <script src="carrousel_banner.js"></script>
+  
+    <main class="container">
+        <h1>Nuestros Productos</h1>
+        <p>Esta es nuestra selección de productos importados Ray-Ban:</p>
+        
+        <section class="product-container">
+            <div class="producto" onclick="mostrarDetalle('rayban-hexagonal.png', 'Ray-Ban Hexagonal', 'Lo mejor de dos mundos, ideal para cualquier ocasión. Diseño icónico y moderno con lentes verdes clásicos.')">
+                <img src="assets/images/rayban-hexagonal.png" alt="Ray-Ban Hexagonal">
+                <h2>Ray-Ban Hexagonal</h2>
+                <p>Lo mejor de dos mundos, ideal para cualquier ocasión.</p>
+                <p class="precio">$199.99</p>
+                <a href="detalle.html" class="boton-comprar">Comprar Ahora</a>
+
+                
+                   
+
+            </div>
+            <div class="producto" onclick="mostrarDetalle('rayban-wayfarer.jpg', 'Ray-Ban Wayfarer', 'Clásico modelo de Ray-Ban, ideal para cualquier ocasión.')">
+                <img src="assets/images/rayban-wayfarer.jpg" alt="Ray-Ban Wayfarer">
+                <h2>Ray-Ban Wayfarer</h2>
+                <p>Estilo icónico y elegante, con lentes polarizados de alta calidad.</p>
+                <p class="precio">$179.99</p>
+                <a href="#" class="boton-comprar">Comprar Ahora</a>
+            </div>
+            <div class="producto">
+                <img src="assets/images/rayban-round.jpg" alt="Ray-Ban Round">
+                <h2>Ray-Ban Round</h2>
+                <p>Diseño moderno con un toque clásico y protección UV.</p>
+                <p class="precio">$219.99</p>
+                <a href="#" class="boton-comprar">Comprar Ahora</a>
+            </div>
+            <div class="producto">
+                <img src="assets/images/rayban-clubmaster.jpg" alt="Ray-Ban Clubmaster">
+                <h2>Ray-Ban Clubmaster</h2>
+                <p>Diseño clásico con protección UV, ideal para cualquier ocasión.</p>
+                <p class="precio">$199.99</p>
+                <a href="#" class="boton-comprar">Comprar Ahora</a>
+            </div>
+        </section>
+
+    <div class="carrousel">
+        <button id="prev">⬅️</button>
+        <img id="imagen" src="" alt="Imagen del carrusel">
+        <button id="next">➡️</button>
+  </div>
+  <script src="carrousel.js"></script>
+
+
+    </main>
+    <footer>
+        <div class="footer-col logo">
+            <img src="assets/images/Logo_F.png" alt="Luxury Glasses">
+        </div>
+        <div class="footer-col social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-col contacto">
+            <p>Email: contacto@rayban.com</p>
+            <p>Teléfono: +54 11 1234-5678</p>
+        </div>
+    </footer>
+    <div id="modal-detalle" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img id="modal-img" src="" alt="" style="width:60%;">
+    <h2 id="modal-titulo"></h2>
+    <p id="modal-descripcion"></p>
+    <button disabled>Agregar al carrito</button>
+  </div>
+</div>
+<script>
+  function mostrarDetalle(imagen, titulo, descripcion) {
+    document.getElementById("modal-img").src = "assets/images/" + imagen;
+    document.getElementById("modal-titulo").innerText = titulo;
+    document.getElementById("modal-descripcion").innerText = descripcion;
+    document.getElementById("modal-detalle").style.display = "block";
+  }
+
+  function cerrarModal() {
+    document.getElementById("modal-detalle").style.display = "none";
+  }
+
+  // Permitir cerrar haciendo clic afuera del modal
+  window.onclick = function(event) {
+    const modal = document.getElementById("modal-detalle");
+    if (event.target == modal) {
+      cerrarModal();
+    }
+  }
+</script>
+</body>
+</html>

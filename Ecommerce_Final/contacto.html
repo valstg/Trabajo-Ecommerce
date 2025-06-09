@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/Logo_F.png" alt="Luxury Glasses">
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acerca.html">Acerca de Nosotros</a></li>
+            <li><a href="admin.html">Admin Productos</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="cart-icon">🛒 </a>
+            <a href="#" class="profile-icon">👤 </a>
+        </div>
+    </nav>
+    <section class="TituloContacto">
+        <p> </p>
+    </section>
+    <h1>CONTACTO</h1>
+    <div class="contact-container">
+        <!-- Formulario de contacto -->
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre Completo*</label>
+                <p><input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50"></p>
+                
+                <label for="email">Correo Electrónico*</label>
+                <p><input type="email" id="email" name="email" required></p>
+                
+                <label for="mensaje">Mensaje</label>
+                <p><textarea id="mensaje" name="mensaje" rows="4" required></textarea></p>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <!-- Mapa de Ubicación -->
+        <div class="contact-map">
+            <h2>Nuestra Ubicación</h2>
+            <p>
+                <iframe 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcR2Jw-Gvb266EuCgPVFu7kkwpM7n71XE&q=Av.+Sta.+Fe+%26+Av.+Callao,+C1023+Cdad.+Aut%C3%B3noma+de+Buenos+Aires,+Argentina"
+                allowfullscreen="">
+            </iframe>
+            <p><a href="https://www.google.com/maps/place/Av.+Sta.+Fe+%26+Av.+Callao,+C1023+Cdad.+Aut%C3%B3noma+de+Buenos+Aires,+Argentina" target="_blank">Ver en Google Maps</a></p>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-col logo">
+            <img src="assets/images/Logo_F.png" alt="Luxury Glasses">
+        </div>
+        <div class="footer-col social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-col contacto">
+            <p>Email: contacto@rayban.com</p>
+            <p>Teléfono: +54 11 1234-5678</p>
+        </div>
+    </footer>
+</body>
+</html>

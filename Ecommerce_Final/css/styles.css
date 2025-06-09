@@ -1,0 +1,312 @@
+/* ----- Navbar ----- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #D70000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    flex: 6;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.cart-icon, .profile-icon {
+    font-size: 1.2em;
+    width: 60px;
+}
+
+.logo{
+    max-width: 40px;
+}
+
+/* ----- Menú hamburguesa sin JS ----- */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #D70000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ----- Secciones Generales Responsivas ----- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+/* ----- Footer ----- */
+footer {
+    background: #1A1A1A;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px;
+}
+
+.footer-col {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-col img {
+    width: 100px;
+    height: auto;
+}
+
+/* ----- Sección de contacto ----- */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.contact-form, .contact-map {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 45%;
+    background: #c1a162;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* ----- Media Queries para dispositivos móviles ----- */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .container {
+        padding: 10px;
+    }
+    .text-section {
+        font-size: 14px;
+    }
+    .image-section img {
+        width: 100%;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form, .contact-map {
+        width: 90%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner{
+        margin-top: 10px;
+    }
+}
+
+/* Padding para toda la seccion formulario; 0 Siendo la del titulo y 2 siendo la del footer*/
+.seccionFormulario0 {
+    padding-top: 100px;
+}
+.seccionFormulario {
+    padding-top: 50px;
+}
+.seccionFormulario2 {
+    padding-top: 203px;
+}
+
+select {
+    font-size: 16px;
+    height: 20px;
+    width: 1210px;
+}
+
+input[type="date"] {
+    text-align: center;
+}
+
+.acerca{
+    padding-top: 150px;
+}
+.seccionacerca{
+    padding-bottom: 150px;
+}
+
+.detalle{
+    padding-top: 100px;
+}
+
+button[class="editar"]{
+    width: 45%;
+}
+button[class="borrar"]{
+    width: 45%;
+}
+
+.finadmin{
+    padding-top: 190px;
+}
+
+.TituloContacto{
+    padding-top: 80px;
+}
+
+
+.carrousel {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carrousel img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.carrousel button {
+   width: 40px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #c4a261;
+  border: none;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-contenido {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #000;
+}

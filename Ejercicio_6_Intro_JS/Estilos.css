@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+h1{
+  color: #333;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje_ej_4 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #943333;
+}
+h2 {
+  color: #555;
+  margin-top: 20px;
+}
