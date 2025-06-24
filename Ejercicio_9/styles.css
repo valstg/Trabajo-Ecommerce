@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f5f6f8;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2e2f33;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+}
+
+.agregar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
